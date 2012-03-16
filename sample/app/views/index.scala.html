@@ -1,0 +1,13 @@
+
+@import _root_.views.html.authtoken.authenticityToken
+
+@main("Index Page") {
+
+   <form action="@routes.Application.process()" method="post">
+      @authenticityToken.render()
+      Please input your name
+      <input name="name" />
+      <input type="submit"/>
+   </form>
+    
+}

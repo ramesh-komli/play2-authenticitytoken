@@ -54,7 +54,7 @@ Adding the authenticity token is trivial: For every form, add `@authenticityToke
 @import _root_.views.html.authtoken.authenticityToken
 
 <form action="@routes.Application.process()" method="post">
-   @authenticityToken.render()
+   @authenticityToken()
    Please input your name
    <input name="name" />
    <input type="submit"/>

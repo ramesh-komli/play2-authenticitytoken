@@ -48,7 +48,7 @@ val main = PlayProject(appName, appVersion, appDependencies, mainLang = JAVA).se
 
 ### 2. Add the Token to FORM elements
 
-Adding the authenticity token is trivial: For every form, add `@authenticityToken.render()` inside the form elements.
+Adding the authenticity token is trivial: For every form, add `@authenticityToken()` inside the form elements.
 
 ```
 @import _root_.views.html.authtoken.authenticityToken
